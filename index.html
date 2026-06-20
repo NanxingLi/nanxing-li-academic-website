@@ -3,60 +3,152 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Nanxing Li — PhD student at KU Leuven studying experimental petrology and planetary geochemistry.">
-  <title>Nanxing Li | Experimental Petrology</title>
+  <meta name="description" content="Nanxing Li — PhD student at KU Leuven studying experimental petrology and the geochemistry of planetary magmas.">
+  <meta name="theme-color" content="#111b1d">
+  <title>Nanxing Li | Planetary Petrology</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <header class="site-header" data-header>
     <div class="container nav-wrap">
-      <a class="site-name" href="index.html" aria-label="Nanxing Li, home">Nanxing Li<span>.</span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><span class="sr-only">Menu</span></button>
+      <a class="site-name" href="#top" aria-label="Nanxing Li, home">Nanxing Li<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span><span class="sr-only">Menu</span>
+      </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a class="active" aria-current="page" href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="cv.html">CV</a><a href="contact.html">Contact</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Selected Publications</a>
+        <a href="#cv">CV / Skills</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">KU Leuven · Earth &amp; Environmental Sciences</p>
-          <h1>Nanxing Li</h1>
-          <p class="role">PhD Student in Geology / Earth and Environmental Sciences</p>
-          <p class="tagline">Experimental petrology and geochemistry of lunar and planetary magmas</p>
-          <p class="intro">I use high-temperature experiments, microanalytical techniques, and thermodynamic modelling to investigate the formation, differentiation, redox state, and volatile evolution of lunar and planetary magmas.</p>
-          <div class="button-row"><a class="button primary" href="research.html">Explore research</a><a class="button" href="publications.html">Publications</a><a class="button" href="cv.html">View CV</a></div>
+  <main id="top">
+    <!-- Hero image: replace assets/img/planet-background.jpg with your preferred planetary image. Keep a wide landscape crop and dark negative space on the left. -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow light">Planetary petrology · KU Leuven</p>
+        <h1 id="hero-title">Nanxing Li</h1>
+        <p class="role">PhD Student in Geology / Earth and Environmental Sciences<br>KU Leuven</p>
+        <p class="tagline">Experimental petrology and geochemistry of planetary magmas</p>
+        <p class="hero-summary">I study the formation and evolution of planetary magmas through high-temperature experiments, microanalytical techniques, and thermodynamic modelling, with a current focus on the Moon and Mars and a growing interest in Mercury.</p>
+        <div class="hero-links">
+          <a href="#research">Research</a><a href="#publications">Publications</a><a href="#cv">CV</a><a href="#contact">Contact</a>
         </div>
-        <!-- Replace assets/img/profile.jpg with a professional portrait. The fallback remains visible if the file is absent. -->
-        <div class="portrait-frame">
-          <img src="assets/img/profile.jpg" alt="Portrait of Nanxing Li" data-fallback="Profile photo">
+      </div>
+      <p class="image-credit">AI-generated scientific visual · Replace with credited mission imagery if preferred</p>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="section-index">01 / About</p>
+          <h2>Experimental constraints on planetary evolution.</h2>
+        </div>
+        <div class="about-copy">
+          <p>I am a PhD student in the Department of Earth and Environmental Sciences at KU Leuven. My research focuses on experimental petrology and geochemistry of planetary magmatic systems. I combine controlled high-temperature experiments, mineral and glass chemistry, trace-element partitioning, and thermodynamic modelling to understand magma differentiation, redox evolution, and volatile-related processes.</p>
+          <div class="identity-line"><span>Based in Leuven, Belgium</span><a href="mailto:nanxing.li@kuleuven.be">nanxing.li@kuleuven.be</a></div>
+        </div>
+        <!-- Add assets/img/profile.jpg to show a portrait. If absent, this labelled placeholder is shown automatically. -->
+        <div class="portrait">
+          <img src="assets/img/profile.jpg" alt="Portrait of Nanxing Li" data-fallback="Professional portrait">
         </div>
       </div>
     </section>
 
-    <section class="section compact">
+    <section class="section research-section" id="research">
       <div class="container">
-        <p class="section-label">Research focus</p>
-        <h2>From experiments to planetary interiors</h2>
-        <div class="focus-grid">
-          <article class="focus-card"><span>01</span><h3>Planetary magmas</h3><p>Constraining differentiation and redox evolution in lunar and planetary melts.</p><a class="text-link" href="research.html#lunar">Lunar research →</a></article>
-          <article class="focus-card"><span>02</span><h3>High-temperature experiments</h3><p>Recreating magmatic processes using gas-mixing furnaces and piston-cylinder apparatus.</p><a class="text-link" href="research.html#experiments">Experimental methods →</a></article>
-          <article class="focus-card"><span>03</span><h3>Microanalysis &amp; modelling</h3><p>Connecting mineral chemistry, trace elements, and thermodynamic models.</p><a class="text-link" href="cv.html#skills">Technical skills →</a></article>
+        <div class="section-heading">
+          <div><p class="section-index">02 / Research</p><h2>Planetary magmatic systems</h2></div>
+          <p>Experiments and models that connect mineral-scale records to planetary-scale evolution.</p>
+        </div>
+
+        <div class="research-label"><span>Current research</span><h3>Experimental petrology of planetary magmas</h3></div>
+        <div class="research-grid">
+          <article class="research-card moon">
+            <span class="card-number">A</span>
+            <p class="planet-label">Moon</p>
+            <h3>Lunar magmatism &amp; redox evolution</h3>
+            <p>My current work investigates the redox state and differentiation of lunar magmas using high-temperature experiments, mineral–melt geochemistry, and trace-element partitioning. I focus particularly on olivine–melt vanadium partitioning as an oxybarometer, with applications to Apollo, Chang’e-5, and lunar meteorite materials.</p>
+          </article>
+          <article class="research-card mars">
+            <span class="card-number">B</span>
+            <p class="planet-label">Mars</p>
+            <h3>Martian magma differentiation</h3>
+            <p>I am interested in how Martian mantle-derived melts differentiate to form evolved lithologies. Experimental petrology, fractional crystallization, volatile-bearing systems, and thermodynamic modelling—including MAGEMin—provide complementary ways to test the conditions and pathways of Martian magmatic evolution.</p>
+          </article>
+          <article class="research-card mercury">
+            <span class="card-number">C</span>
+            <p class="planet-label">Mercury · Emerging interest</p>
+            <h3>Magmatism under highly reduced conditions</h3>
+            <p>As a future research direction, I am interested in applying experimental and geochemical approaches to the highly reduced magmatic systems of Mercury. These environments offer a valuable test of how extreme redox conditions influence phase relations, element partitioning, and crust-forming processes.</p>
+          </article>
+        </div>
+
+        <div class="previous-research">
+          <div><span>Previous research</span><h3>Granitic pegmatites &amp; rare-metal mineralization</h3></div>
+          <p>My previous work examined the petrogenesis and mineralization of granite–pegmatite systems, including W–Sn and Li–Nb–Ta deposits. I investigated how volatile exsolution, boundary-layer melts, and tourmaline records illuminate rare-metal enrichment during late-stage magmatic evolution.</p>
         </div>
       </div>
     </section>
 
-    <section class="section keywords-section">
-      <div class="container two-col">
-        <div><p class="section-label">Keywords</p><h2>Methods &amp; themes</h2></div>
-        <ul class="tag-list" aria-label="Research keywords"><li>Experimental petrology</li><li>Lunar magmatism</li><li>Planetary geochemistry</li><li>Redox state</li><li>Melt evolution</li><li>Volatile exsolution</li><li>EPMA</li><li>LA-ICP-MS</li><li>SEM</li><li>MAGEMin</li><li>Thermodynamic modelling</li></ul>
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-index">03 / Publications</p><h2>Selected Publications &amp; Manuscripts</h2></div>
+          <p>A concise selection of published and active work.</p>
+        </div>
+        <div class="publication-list">
+          <!-- Replace # with the DOI or publisher URL when available. -->
+          <article class="publication"><span>Published</span><div><h3>The role of magmatic volatile phase exsolution in lithium enrichment in pegmatites: Tourmaline evidence from the Mufushan Complex, South China</h3><p><strong>Li, N.</strong> et al. · <em>Geological Society of America Bulletin</em></p></div><a href="#" aria-label="DOI placeholder for pegmatite publication">DOI <small>[PLACEHOLDER]</small></a></article>
+          <article class="publication"><span>Manuscript</span><div><h3>Lunar V partitioning and redox evolution</h3><p><strong>Li, N.</strong> et al. · [STATUS / JOURNAL PLACEHOLDER]</p></div><small>[LINK]</small></article>
+          <article class="publication"><span>Manuscript</span><div><h3>Lunar silicic magmas and KREEP–norite interaction</h3><p><strong>Li, N.</strong> et al. · [STATUS / JOURNAL PLACEHOLDER]</p></div><small>[LINK]</small></article>
+          <article class="publication"><span>In preparation</span><div><h3>Experimental differentiation of Martian magmas</h3><p><strong>Li, N.</strong> et al. · [DETAILS PLACEHOLDER]</p></div><small>[LINK]</small></article>
+        </div>
+        <p class="publication-note">Full publication list available on <a href="https://scholar.google.com/citations?user=74eNEf8AAAAJ&amp;hl=en&amp;inst=1273811514435761252&amp;authuser=1&amp;oi=sra" target="_blank" rel="noopener">Google Scholar</a> and <a href="https://www.researchgate.net/profile/Nanxing-Li-4?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate</a>.</p>
+      </div>
+    </section>
+
+    <section class="section cv-section" id="cv">
+      <div class="container">
+        <div class="section-heading light-heading">
+          <div><p class="section-index">04 / CV &amp; Skills</p><h2>Methods &amp; experience</h2></div>
+          <!-- Add your PDF at this exact path. -->
+          <a class="button-outline" href="assets/files/Nanxing_Li_CV.pdf" download>Download CV</a>
+        </div>
+        <div class="cv-grid">
+          <div class="cv-summary">
+            <section><span>Education</span><h3>PhD, Earth &amp; Environmental Sciences</h3><p>KU Leuven · [YEAR–PRESENT]</p><h3>[PREVIOUS DEGREE]</h3><p>[INSTITUTION · YEAR]</p></section>
+            <section><span>Research interests</span><p>Planetary magmatism · Redox evolution · Trace-element partitioning · Silicic melts · Volatile-rich systems</p></section>
+          </div>
+          <div class="skills-block">
+            <p class="skills-title">Experimental &amp; analytical</p>
+            <ul class="skill-list"><li>Experimental petrology</li><li>1-atm gas-mixing furnace</li><li>Piston-cylinder experiments</li><li>EPMA</li><li>SEM / BSE / EDS</li><li>LA-ICP-MS</li><li>Melt inclusion &amp; mineral chemistry</li><li>Trace-element partitioning</li></ul>
+            <p class="skills-title">Modelling &amp; data</p>
+            <ul class="skill-list"><li>Thermodynamic modelling</li><li>MAGEMin</li><li>Scientific plotting</li><li>Data processing</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div><p class="section-index">05 / Contact</p><h2>Scientific correspondence &amp; collaboration</h2><a class="email" href="mailto:nanxing.li@kuleuven.be">nanxing.li@kuleuven.be</a></div>
+        <div class="contact-details">
+          <div><span>Institution</span><p>Department of Earth and Environmental Sciences<br>KU Leuven</p></div>
+          <div><span>Location</span><p>Leuven, Belgium</p></div>
+          <div class="academic-links"><span>Academic links</span><a href="https://scholar.google.com/citations?user=74eNEf8AAAAJ&amp;hl=en&amp;inst=1273811514435761252&amp;authuser=1&amp;oi=sra" target="_blank" rel="noopener">Google Scholar ↗</a><a href="https://www.researchgate.net/profile/Nanxing-Li-4?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate ↗</a><!-- Replace # with your real profile URLs. --><a href="#">ORCID <small>[PLACEHOLDER]</small></a><a href="https://github.com/NanxingLi" target="_blank" rel="noopener">GitHub ↗</a><a href="#">LinkedIn <small>[PLACEHOLDER]</small></a></div>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="container footer-grid"><div><strong>Nanxing Li</strong><p>Experimental petrology &amp; planetary geochemistry</p></div><div><a href="mailto:nanxing.li@kuleuven.be">nanxing.li@kuleuven.be</a><p>KU Leuven · Leuven, Belgium</p></div><div class="footer-links"><a href="contact.html">Academic profiles</a><span>© <span data-year></span></span></div></div></footer>
+
+  <footer class="site-footer"><div class="container"><p>© <span data-year></span> Nanxing Li</p><a href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>

@@ -1,12 +1,14 @@
 # Nanxing Li — Academic Website
 
-A responsive static academic website built with plain HTML, CSS, and JavaScript. It can be hosted directly on GitHub Pages without a build step.
+A concise, responsive one-page academic website for a planetary petrologist. It uses plain HTML, CSS, and JavaScript and can be hosted directly on GitHub Pages without a build step.
+
+## Page structure
+
+All primary content is in `index.html`: About, Research, Selected Publications, CV / Skills, and Contact. The former multi-page URLs are retained as small redirects so existing links do not break.
 
 ## Preview locally
 
-Option 1: open `index.html` directly in a browser.
-
-Option 2 (recommended): from this folder, run:
+Open `index.html` directly, or run a local server from this folder:
 
 ```powershell
 python -m http.server 8000
@@ -14,22 +16,19 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## Update the content
+## Replace content and assets
 
-- Edit page text directly in the five `.html` files.
-- Search for `[PLACEHOLDER]` to find unfinished content.
-- Add the profile and research images to `assets/img/` using the filenames referenced in the HTML.
-- Add the full CV as `assets/files/Nanxing_Li_CV.pdf`.
-- Replace `#` profile links in `contact.html` with real URLs.
-- Adjust colors and spacing at the top of `assets/css/style.css`.
+- **Profile photo:** add `assets/img/profile.jpg`.
+- **Planetary hero:** replace `assets/img/planet-background.jpg` with a wide image using the same filename, or update the URL in `assets/css/style.css`. Add an appropriate image credit in `index.html` when using third-party mission imagery.
+- **CV:** add `assets/files/Nanxing_Li_CV.pdf`.
+- **Publication links:** search `index.html` for `[PLACEHOLDER]` and replace `href="#"` with DOI or publisher links.
+- **Academic profiles:** Google Scholar and ResearchGate are already linked. Replace the ORCID and LinkedIn placeholders.
+- **Education and manuscript status:** search the site for bracketed text and replace it with confirmed details.
 
-## Deploy with GitHub Pages
+## GitHub Pages
 
-1. Create a GitHub repository (for example, `academic-website`).
-2. Commit and push the complete contents of this folder to the repository's `main` branch.
-3. In the GitHub repository, open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select branch **main**, folder **/(root)**, then save.
-6. GitHub will publish the site at the URL shown on that settings page.
+The live site is deployed from the `main` branch at:
 
-For a personal root URL such as `username.github.io`, name the repository exactly `username.github.io`.
+`https://nanxingli.github.io/nanxing-li-academic-website/`
+
+Pushing a new commit to `main` will trigger an automatic Pages rebuild.
