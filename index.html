@@ -10,7 +10,7 @@
   <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#about">Skip to content</a>
+  <a class="skip-link" href="#research">Skip to content</a>
 
   <header class="site-header" data-header>
     <div class="container nav-wrap">
@@ -19,11 +19,9 @@
         <span></span><span></span><span></span><span class="sr-only">Menu</span>
       </button>
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
         <a href="#research">Research</a>
-        <a href="#publications">Selected Publications</a>
-        <a href="#cv">CV / Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#publications">Publications</a>
+        <a href="#profile">Profile / Contact</a>
       </nav>
     </div>
   </header>
@@ -38,34 +36,15 @@
         <p class="role">PhD Student in Geology / Earth and Environmental Sciences<br>KU Leuven</p>
         <p class="tagline">Experimental petrology and geochemistry of planetary magmas</p>
         <p class="hero-summary">I study the formation and evolution of planetary magmas through high-temperature experiments, microanalytical techniques, and thermodynamic modelling, with a current focus on the Moon and Mars and a growing interest in Mercury.</p>
-        <div class="hero-links">
-          <a href="#research">Research</a><a href="#publications">Publications</a><a href="#cv">CV</a><a href="#contact">Contact</a>
-        </div>
+        <div class="hero-links"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#profile">Profile / Contact</a></div>
       </div>
       <p class="image-credit">AI-generated scientific visual · Replace with credited mission imagery if preferred</p>
-    </section>
-
-    <section class="section about" id="about">
-      <div class="container about-grid">
-        <div>
-          <p class="section-index">01 / About</p>
-          <h2>Experimental constraints on planetary evolution.</h2>
-        </div>
-        <div class="about-copy">
-          <p>I am a PhD student in the Department of Earth and Environmental Sciences at KU Leuven. My research focuses on experimental petrology and geochemistry of planetary magmatic systems. I combine controlled high-temperature experiments, mineral and glass chemistry, trace-element partitioning, and thermodynamic modelling to understand magma differentiation, redox evolution, and volatile-related processes.</p>
-          <div class="identity-line"><span>Based in Leuven, Belgium</span><a href="mailto:nanxing.li@kuleuven.be">nanxing.li@kuleuven.be</a></div>
-        </div>
-        <!-- Add assets/img/profile.jpg to show a portrait. If absent, this labelled placeholder is shown automatically. -->
-        <div class="portrait">
-          <img src="assets/img/profile.jpg" alt="Portrait of Nanxing Li" data-fallback="Professional portrait">
-        </div>
-      </div>
     </section>
 
     <section class="section research-section" id="research">
       <div class="container">
         <div class="section-heading">
-          <div><p class="section-index">02 / Research</p><h2>Planetary magmatic systems</h2></div>
+          <div><p class="section-index">01 / Research</p><h2>Planetary magmatic systems</h2></div>
           <p>Experiments and models that connect mineral-scale records to planetary-scale evolution.</p>
         </div>
 
@@ -101,7 +80,7 @@
     <section class="section" id="publications">
       <div class="container">
         <div class="section-heading">
-          <div><p class="section-index">03 / Publications</p><h2>Selected Publications &amp; Manuscripts</h2></div>
+          <div><p class="section-index">02 / Selected Publications and Manuscripts</p><h2>Selected Publications &amp; Manuscripts</h2></div>
           <p>A concise selection of published and active work.</p>
         </div>
         <div class="publication-list">
@@ -115,35 +94,32 @@
       </div>
     </section>
 
-    <section class="section cv-section" id="cv">
+    <section class="section profile-section" id="profile">
+      <!-- Legacy anchors preserve previously shared #cv and #contact links. -->
+      <span class="legacy-anchor" id="cv" aria-hidden="true"></span><span class="legacy-anchor" id="contact" aria-hidden="true"></span>
       <div class="container">
-        <div class="section-heading light-heading">
-          <div><p class="section-index">04 / CV &amp; Skills</p><h2>Methods &amp; experience</h2></div>
-          <!-- Add your PDF at this exact path. -->
-          <a class="button-outline" href="assets/files/Nanxing_Li_CV.pdf" download>Download CV</a>
-        </div>
-        <div class="cv-grid">
-          <div class="cv-summary">
-            <section><span>Education</span><h3>PhD, Earth &amp; Environmental Sciences</h3><p>KU Leuven · [YEAR–PRESENT]</p><h3>[PREVIOUS DEGREE]</h3><p>[INSTITUTION · YEAR]</p></section>
-            <section><span>Research interests</span><p>Planetary magmatism · Redox evolution · Trace-element partitioning · Silicic melts · Volatile-rich systems</p></section>
+        <p class="section-index">03 / Academic Profile &amp; Contact</p>
+        <div class="profile-grid">
+          <div class="academic-profile">
+            <h2>Academic profile</h2>
+            <dl class="profile-facts">
+              <div><dt>Position</dt><dd>PhD student, Department of Earth and Environmental Sciences, KU Leuven</dd></div>
+              <div><dt>Supervisor</dt><dd>Prof. Olivier Namur</dd></div>
+              <div><dt>Research focus</dt><dd>Experimental petrology and geochemistry of planetary magmas</dd></div>
+              <div><dt>Current focus</dt><dd>Lunar and Martian magmatic differentiation, redox evolution, and volatile-related processes</dd></div>
+              <div><dt>Previous research</dt><dd>Granite–pegmatite systems and rare-metal mineralization</dd></div>
+            </dl>
+            <p class="methods-line"><span>Methods</span>High-temperature experiments · EPMA · SEM/BSE/EDS · LA-ICP-MS · Trace-element partitioning · Thermodynamic modelling · MAGEMin</p>
+            <!-- Add your PDF at this exact path. -->
+            <a class="cv-button" href="assets/files/Nanxing_Li_CV.pdf" download>Download CV</a>
           </div>
-          <div class="skills-block">
-            <p class="skills-title">Experimental &amp; analytical</p>
-            <ul class="skill-list"><li>Experimental petrology</li><li>1-atm gas-mixing furnace</li><li>Piston-cylinder experiments</li><li>EPMA</li><li>SEM / BSE / EDS</li><li>LA-ICP-MS</li><li>Melt inclusion &amp; mineral chemistry</li><li>Trace-element partitioning</li></ul>
-            <p class="skills-title">Modelling &amp; data</p>
-            <ul class="skill-list"><li>Thermodynamic modelling</li><li>MAGEMin</li><li>Scientific plotting</li><li>Data processing</li></ul>
+          <div class="profile-contact">
+            <h2>Contact</h2>
+            <div class="contact-item"><span>Email</span><a href="mailto:nanxing.li@kuleuven.be">nanxing.li@kuleuven.be</a></div>
+            <div class="contact-item"><span>Institution</span><p>Department of Earth and Environmental Sciences, KU Leuven</p></div>
+            <div class="contact-item"><span>Location</span><p>Leuven, Belgium</p></div>
+            <div class="profile-links"><span>Academic links</span><a href="https://www.kuleuven.be/wieiswie/en/person/00175915" target="_blank" rel="noopener">KU Leuven profile ↗</a><a href="https://scholar.google.com/citations?user=74eNEf8AAAAJ&amp;hl=en&amp;inst=1273811514435761252&amp;authuser=1&amp;oi=sra" target="_blank" rel="noopener">Google Scholar ↗</a><a href="https://www.researchgate.net/profile/Nanxing-Li-4?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate ↗</a></div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="container contact-grid">
-        <div><p class="section-index">05 / Contact</p><h2>Scientific correspondence &amp; collaboration</h2><a class="email" href="mailto:nanxing.li@kuleuven.be">nanxing.li@kuleuven.be</a></div>
-        <div class="contact-details">
-          <div><span>Institution</span><p>Department of Earth and Environmental Sciences<br>KU Leuven</p></div>
-          <div><span>Location</span><p>Leuven, Belgium</p></div>
-          <div class="academic-links"><span>Academic links</span><a href="https://scholar.google.com/citations?user=74eNEf8AAAAJ&amp;hl=en&amp;inst=1273811514435761252&amp;authuser=1&amp;oi=sra" target="_blank" rel="noopener">Google Scholar ↗</a><a href="https://www.researchgate.net/profile/Nanxing-Li-4?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate ↗</a><!-- Replace # with your real profile URLs. --><a href="#">ORCID <small>[PLACEHOLDER]</small></a><a href="https://github.com/NanxingLi" target="_blank" rel="noopener">GitHub ↗</a><a href="#">LinkedIn <small>[PLACEHOLDER]</small></a></div>
         </div>
       </div>
     </section>

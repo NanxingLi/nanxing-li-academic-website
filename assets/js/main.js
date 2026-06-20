@@ -1,4 +1,4 @@
-// One-page navigation, mobile menu, scroll state, and graceful image placeholders.
+// One-page navigation, mobile menu, and scroll state.
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('[data-header]');
   const toggle = document.querySelector('.nav-toggle');
@@ -36,12 +36,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
-  document.querySelectorAll('img[data-fallback]').forEach((image) => {
-    image.addEventListener('error', () => {
-      const fallback = document.createElement('div');
-      fallback.className = 'image-fallback';
-      fallback.innerHTML = `${image.dataset.fallback}<br><small>[PLACEHOLDER]</small>`;
-      image.replaceWith(fallback);
-    }, { once: true });
-  });
 });
